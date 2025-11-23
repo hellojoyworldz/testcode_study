@@ -24,9 +24,13 @@ jobs:
           aws-region: ap-northeast-2
       - name: Install dependencies
         run: npm ci
-      - name: Buid Storybook
+        working-directory: ./chapter8-suit
+      - name: Build Storybook
         run: npm run storybook:build
+        working-directory: ./chapter8-suit
       - name: Run Storycap
         run: npm run vrt:snapshot
+        working-directory: ./chapter8-suit
       - name: Run reg-suit
         run: npm run vrt:run
+        working-directory: ./chapter8-suit
