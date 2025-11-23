@@ -4,8 +4,7 @@
 import type { PartialStoryFn } from "storybook/internal/csf";
 import type { ModalState } from "./ModalContext";
 import { ModalProvider } from "./ModalProvider";
-import type { Meta, ReactRenderer } from "@storybook/react";
-import type { Args } from "@storybook/csf";
+import type { Meta, ReactRenderer, Args } from "@storybook/react";
 import { ModalComponent } from "./ModalComponent";
 
 function createDecorator(defaultState?: Partial<ModalState>) {
