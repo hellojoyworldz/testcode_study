@@ -36,3 +36,4 @@ jobs:
       - name: Run reg-suit
         run: npm run vrt:run
         working-directory: ./chapter8-suit
+
