@@ -1,6 +1,8 @@
 name: Run VRT
 
-on: push
+on:
+  push:
+  pull_request:
 
 env:
   REG_NOTIFY_CLIENT_ID: ${{ secrets.REG_NOTIFY_CLIENT_ID }}
